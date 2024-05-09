@@ -10,10 +10,12 @@
 // I AM NOT DONE
 
 fn vec_loop(mut v: Vec<i32>) -> Vec<i32> {
+    let mut a:i32 = 1;
     for element in v.iter_mut() {
         // TODO: Fill this up so that each element in the Vec `v` is
         // multiplied by 2.
-        ???
+        a = a * 2;
+        v.push(a);
     }
 
     // At this point, `v` should be equal to [4, 8, 12, 16, 20].
